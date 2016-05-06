@@ -1,0 +1,208 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha.air 1
+    volScalarFieldValue alpha.other 0
+    volScalarFieldValue alpha.water 0
+);
+
+regions
+(
+
+    boxToCell
+    {
+        box (0 0 0.000000) (1.0 1.0 0.033333);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.968952
+            volScalarFieldValue alpha.water 0.031048
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.033333) (1.0 1.0 0.066667);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.906855
+            volScalarFieldValue alpha.water 0.093145
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.066667) (1.0 1.0 0.100000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.844759
+            volScalarFieldValue alpha.water 0.155241
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.100000) (1.0 1.0 0.133333);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.782663
+            volScalarFieldValue alpha.water 0.217337
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.133333) (1.0 1.0 0.166667);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.720566
+            volScalarFieldValue alpha.water 0.279434
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.166667) (1.0 1.0 0.200000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.658470
+            volScalarFieldValue alpha.water 0.341530
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.200000) (1.0 1.0 0.233333);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.596374
+            volScalarFieldValue alpha.water 0.403626
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.233333) (1.0 1.0 0.266667);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.534277
+            volScalarFieldValue alpha.water 0.465723
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.266667) (1.0 1.0 0.300000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.472181
+            volScalarFieldValue alpha.water 0.527819
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.300000) (1.0 1.0 0.333333);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.410084
+            volScalarFieldValue alpha.water 0.589916
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.333333) (1.0 1.0 0.366667);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.347988
+            volScalarFieldValue alpha.water 0.652012
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.366667) (1.0 1.0 0.400000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.285892
+            volScalarFieldValue alpha.water 0.714108
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.400000) (1.0 1.0 0.433333);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.223795
+            volScalarFieldValue alpha.water 0.776205
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.433333) (1.0 1.0 0.466667);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.161699
+            volScalarFieldValue alpha.water 0.838301
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.466667) (1.0 1.0 0.500000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.099603
+            volScalarFieldValue alpha.water 0.900397
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0 0.500000) (1.0 1.0 0.533333);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.037506
+            volScalarFieldValue alpha.water 0.962494
+        );
+    }
+
+   
+);
+
+
+// ************************************************************************* //

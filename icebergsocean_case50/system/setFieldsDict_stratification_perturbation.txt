@@ -1,0 +1,693 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha.air 1
+    volScalarFieldValue alpha.other 0
+    volScalarFieldValue alpha.water 0
+);
+
+regions
+(
+
+    boxToCell
+    {
+        box (0 0.000000 0) (1.0 0.015625 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.991071
+            volScalarFieldValue alpha.water 0.008929
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.015625 0) (1.0 0.031250 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.973214
+            volScalarFieldValue alpha.water 0.026786
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.031250 0) (1.0 0.046875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.955357
+            volScalarFieldValue alpha.water 0.044643
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.046875 0) (1.0 0.062500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.937500
+            volScalarFieldValue alpha.water 0.062500
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.062500 0) (1.0 0.078125 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.919643
+            volScalarFieldValue alpha.water 0.080357
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.078125 0) (1.0 0.093750 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.901786
+            volScalarFieldValue alpha.water 0.098214
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.093750 0) (1.0 0.109375 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.883929
+            volScalarFieldValue alpha.water 0.116071
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.109375 0) (1.0 0.125000 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.866071
+            volScalarFieldValue alpha.water 0.133929
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.125000 0) (1.0 0.140625 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.848214
+            volScalarFieldValue alpha.water 0.151786
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.140625 0) (1.0 0.156250 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.830357
+            volScalarFieldValue alpha.water 0.169643
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.156250 0) (1.0 0.171875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.812500
+            volScalarFieldValue alpha.water 0.187500
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.171875 0) (1.0 0.187500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.794643
+            volScalarFieldValue alpha.water 0.205357
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.187500 0) (1.0 0.203125 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.776786
+            volScalarFieldValue alpha.water 0.223214
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.203125 0) (1.0 0.218750 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.758929
+            volScalarFieldValue alpha.water 0.241071
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.218750 0) (1.0 0.234375 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.741071
+            volScalarFieldValue alpha.water 0.258929
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.234375 0) (1.0 0.250000 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.723214
+            volScalarFieldValue alpha.water 0.276786
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.250000 0) (1.0 0.265625 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.705357
+            volScalarFieldValue alpha.water 0.294643
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.265625 0) (1.0 0.281250 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.687500
+            volScalarFieldValue alpha.water 0.312500
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.281250 0) (1.0 0.296875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.669643
+            volScalarFieldValue alpha.water 0.330357
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.296875 0) (1.0 0.312500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.651786
+            volScalarFieldValue alpha.water 0.348214
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.312500 0) (1.0 0.328125 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.633929
+            volScalarFieldValue alpha.water 0.366071
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.328125 0) (1.0 0.343750 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.616071
+            volScalarFieldValue alpha.water 0.383929
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.343750 0) (1.0 0.359375 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.598214
+            volScalarFieldValue alpha.water 0.401786
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.359375 0) (1.0 0.375000 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.580357
+            volScalarFieldValue alpha.water 0.419643
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.375000 0) (1.0 0.390625 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.562500
+            volScalarFieldValue alpha.water 0.437500
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.390625 0) (1.0 0.406250 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.544643
+            volScalarFieldValue alpha.water 0.455357
+        );
+    }
+    // start of perturbation:
+    
+    boxToCell
+    {
+        box (0 0.406250 0) (0.406250 0.421875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.526786
+            volScalarFieldValue alpha.water 0.473214
+        );
+    }
+    
+    boxToCell
+    {
+        box (0.406250 0.406250 0) (0.437500 0.421875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.241071
+            volScalarFieldValue alpha.water 0.758929
+        );
+    }
+    
+    boxToCell
+    {
+        box (0.437500 0.406250 0) (0.406250 0.421875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.526786
+            volScalarFieldValue alpha.water 0.473214
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.421875 0) (0.406250 0.437500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.508929
+            volScalarFieldValue alpha.water 0.491071
+        );
+    }
+    
+    boxToCell
+    {
+        box (0.406250 0.421875 0) (0.437500 0.437500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.241071
+            volScalarFieldValue alpha.water 0.758929
+        );
+    }
+    
+    boxToCell
+    {
+        box (0.437500 0.421875 0) (1.0 0.437500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.508929
+            volScalarFieldValue alpha.water 0.491071
+        );
+    }
+    
+    // end of perturbation
+    
+    boxToCell
+    {
+        box (0 0.437500 0) (1.0 0.453125 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.491071
+            volScalarFieldValue alpha.water 0.508929
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.453125 0) (1.0 0.468750 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.473214
+            volScalarFieldValue alpha.water 0.526786
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.468750 0) (1.0 0.484375 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.455357
+            volScalarFieldValue alpha.water 0.544643
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.484375 0) (1.0 0.500000 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.437500
+            volScalarFieldValue alpha.water 0.562500
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.500000 0) (1.0 0.515625 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.419643
+            volScalarFieldValue alpha.water 0.580357
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.515625 0) (1.0 0.531250 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.401786
+            volScalarFieldValue alpha.water 0.598214
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.531250 0) (1.0 0.546875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.383929
+            volScalarFieldValue alpha.water 0.616071
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.546875 0) (1.0 0.562500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.366071
+            volScalarFieldValue alpha.water 0.633929
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.562500 0) (1.0 0.578125 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.348214
+            volScalarFieldValue alpha.water 0.651786
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.578125 0) (1.0 0.593750 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.330357
+            volScalarFieldValue alpha.water 0.669643
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.593750 0) (1.0 0.609375 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.312500
+            volScalarFieldValue alpha.water 0.687500
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.609375 0) (1.0 0.625000 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.294643
+            volScalarFieldValue alpha.water 0.705357
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.625000 0) (1.0 0.640625 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.276786
+            volScalarFieldValue alpha.water 0.723214
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.640625 0) (1.0 0.656250 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.258929
+            volScalarFieldValue alpha.water 0.741071
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.656250 0) (1.0 0.671875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.241071
+            volScalarFieldValue alpha.water 0.758929
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.671875 0) (1.0 0.687500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.223214
+            volScalarFieldValue alpha.water 0.776786
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.687500 0) (1.0 0.703125 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.205357
+            volScalarFieldValue alpha.water 0.794643
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.703125 0) (1.0 0.718750 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.187500
+            volScalarFieldValue alpha.water 0.812500
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.718750 0) (1.0 0.734375 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.169643
+            volScalarFieldValue alpha.water 0.830357
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.734375 0) (1.0 0.750000 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.151786
+            volScalarFieldValue alpha.water 0.848214
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.750000 0) (1.0 0.765625 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.133929
+            volScalarFieldValue alpha.water 0.866071
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.765625 0) (1.0 0.781250 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.116071
+            volScalarFieldValue alpha.water 0.883929
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.781250 0) (1.0 0.796875 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.098214
+            volScalarFieldValue alpha.water 0.901786
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.796875 0) (1.0 0.812500 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.080357
+            volScalarFieldValue alpha.water 0.919643
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.812500 0) (1.0 0.828125 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.062500
+            volScalarFieldValue alpha.water 0.937500
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.828125 0) (1.0 0.843750 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.044643
+            volScalarFieldValue alpha.water 0.955357
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.843750 0) (1.0 0.859375 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.026786
+            volScalarFieldValue alpha.water 0.973214
+        );
+    }
+
+    boxToCell
+    {
+        box (0 0.859375 0) (1.0 0.875000 0.1);
+        fieldValues
+        (
+            volScalarFieldValue alpha.air 0
+            volScalarFieldValue alpha.other 0.008929
+            volScalarFieldValue alpha.water 0.991071
+        );
+    }
+);
+
+
+// ************************************************************************* //
