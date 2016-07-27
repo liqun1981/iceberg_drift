@@ -22,9 +22,23 @@ def get_data(case_id, end_time, variable):
 def make_plot(case_id, variable):
 
     data = np.genfromtxt('/home/evankielley/OpenFOAM/evankielley-3.0.1/run/300/{}/{}_{}_data.txt'.format(case_id, case_id, variable), delimiter=' ', names=['t', 'x', 'y', 'z'])
-    plt.plot(data['t'], data['x'])
-    plt.plot(data['t'], data['y'])
-    plt.plot(data['t'], data['z'])
+    plt.plot(data['t'], data['x'], 'k--', label='x')
+    plt.plot(data['t'], data['y'], 'k:', label='y')
+    plt.plot(data['t'], data['z'], 'k', label='z')
+    plt.xlabel('time (s)')
+    plt.ylabel('{}'.format(variable))
+    legend = plt.legend(loc='upper center', shadow=True)
+
+    # The frame is matplotlib.patches.Rectangle instance surrounding the legend.
+    frame = legend.get_frame()
+    frame.set_facecolor('0.90')
+
+    # Set the fontsize
+    for label in legend.get_texts():
+        label.set_fontsize('large')
+
+    for label in legend.get_lines():
+        label.set_linewidth(1.5)  # the legend line width
     pylab.savefig('{}_{}_plot.png'.format(case_id, variable))
     plt.cla()  # clears subplots
 
