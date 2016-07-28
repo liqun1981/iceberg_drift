@@ -1,13 +1,29 @@
+import sys
 import pylab
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def get_data(case_id, end_time, variable):
+try:
+    case_id = str(sys.argv[1])
+except IndexError:
+    case_id = "error"
+    print ("argument 1 = case_id & argument 2 = end_time")
+try:
+    end_time = float(sys.argv[2])
+except IndexError:
+    end_time = 0.0;
+    print ("argument 1 = case_id & argument 2 = end_time")
+
+
+def get_data( variable):
 
     with open("{}_{}_data.txt".format(case_id, variable), "a") as f1:
         for i in np.arange(0.1, end_time, 0.1):
-            time = str(i)
+            time = i
+            if time % 1 == 0:
+                time = int(time)
+            time = str(time)
             file = '/home/evankielley/OpenFOAM/evankielley-3.0.1/run/300/{}/{}/uniform/sixDoFRigidBodyMotionState'.format(case_id, time)
             with open(file) as f:
                 for line in f:
@@ -19,7 +35,8 @@ def get_data(case_id, end_time, variable):
                         z = float(s1[2])
                         f1.write("{} {} {} {}\n".format(time, x, y, z))
 
-def make_plot(case_id, variable):
+
+def make_plot(variable):
 
     data = np.genfromtxt('/home/evankielley/OpenFOAM/evankielley-3.0.1/run/300/{}/{}_{}_data.txt'.format(case_id, case_id, variable), delimiter=' ', names=['t', 'x', 'y', 'z'])
     plt.plot(data['t'], data['x'], 'k--', label='x')
@@ -42,13 +59,14 @@ def make_plot(case_id, variable):
     pylab.savefig('{}_{}_plot.png'.format(case_id, variable))
     plt.cla()  # clears subplots
 
+
 if __name__ == "__main__":
     
-    get_data("case308", 3.0, "centreOfRotation")
-    make_plot("case308", "centreOfRotation")
+    get_data("centreOfRotation")
+    make_plot("centreOfRotation")
 
-    get_data("case308", 3.0, "velocity")
-    make_plot("case308", "velocity")
+    get_data("velocity")
+    make_plot("velocity")
 
-    get_data("case308", 3.0, "acceleration")
-    make_plot("case308", "acceleration")
+    get_data("acceleration")
+    make_plot("acceleration")
