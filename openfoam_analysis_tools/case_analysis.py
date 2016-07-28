@@ -3,7 +3,7 @@ import pylab
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+'''
 try:
     case_id = str(sys.argv[1])
 except IndexError:
@@ -14,14 +14,18 @@ try:
 except IndexError:
     end_time = 0.0;
     print ("argument 1 = case_id & argument 2 = end_time")
+'''
 
+case_id = str(sys.argv[1])
+end_time = float(sys.argv[2])
 
 def get_data( variable):
-
+    count = 0
     with open("{}_{}_data.txt".format(case_id, variable), "a") as f1:
         for i in np.arange(0.1, end_time, 0.1):
+            count += 1
             time = i
-            if time % 1 == 0:
+            if count % 10 == 0:
                 time = int(time)
             time = str(time)
             file = '/home/evankielley/OpenFOAM/evankielley-3.0.1/run/300/{}/{}/uniform/sixDoFRigidBodyMotionState'.format(case_id, time)
