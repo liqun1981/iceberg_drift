@@ -1,0 +1,117 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+convertToMeters 1;
+
+vertices
+(
+    (0 0 0) //0
+    (3 0 0) //1
+    (3 3 0) //2
+    (0 3 0) //3
+    (0 0 1) //4
+    (3 0 1) //5
+    (3 3 1) //6
+    (0 3 1) //7
+    (0 0 2) //8
+    (3 0 2) //9
+    (3 3 2) //10
+    (0 3 2) //11
+    (0 0 3) //12
+    (3 0 3) //13
+    (3 3 3) //14
+    (0 3 3) //15
+);
+
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) (20 20 20) simpleGrading (1 1 1)
+    hex (4 5 6 7 8 9 10 11) (40 40 40) simpleGrading (1 1 1)
+    hex (8 9 10 11 12 13 14 15) (20 20 20) simpleGrading (1 1 1)
+);
+
+edges
+(
+);
+
+boundary
+(
+    stationaryWalls
+    {
+        type wall;
+        faces
+        (
+            (0 3 2 1)
+            (2 6 5 1)
+            (1 5 4 0)
+            (3 7 6 2)
+            (0 4 7 3) //
+            (6 10 9 5)
+            (5 9 8 4)
+            (7 11 10 6)
+            (4 8 11 7) // 
+            (10 14 13 9)
+            (9 13 12 8)
+            (11 15 14 10)
+            (8 12 15 11)           
+        );
+    }
+    atmosphere
+    {
+        type patch;
+        faces
+        (
+            (12 13 14 15)
+        );
+    }
+    floatingObject
+    {
+        type wall;
+        faces ();
+    }
+/*
+    ceiling_one
+    {
+        type patch;
+        faces ((4 7 6 5));
+    }
+    floor_one
+    {
+        type patch;
+        faces ((4 7 6 5));
+    }
+    ceiling_two
+    {
+        type patch;
+        faces ((8 11 10 9));
+    }
+    floor_two
+    {
+        type patch;
+        faces ((8 11 10 9));
+    }
+*/
+);
+
+mergePatchPairs
+(
+/*
+    (ceiling_one floor_one)
+    (ceiling_two floor_two)
+*/
+);
+
+// ************************************************************************* //
