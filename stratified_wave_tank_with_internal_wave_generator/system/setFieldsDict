@@ -1,0 +1,1129 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha.fresh 1
+    volScalarFieldValue alpha.salty 0
+);
+
+regions
+(
+
+    boxToCell
+    {
+        box (-100 -100 0.000000) (100 100 0.005000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.995455
+            volScalarFieldValue alpha.fresh 0.004545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.005000) (100 100 0.010000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.986364
+            volScalarFieldValue alpha.fresh 0.013636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.010000) (100 100 0.015000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.977273
+            volScalarFieldValue alpha.fresh 0.022727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.015000) (100 100 0.020000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.968182
+            volScalarFieldValue alpha.fresh 0.031818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.020000) (100 100 0.025000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.959091
+            volScalarFieldValue alpha.fresh 0.040909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.025000) (100 100 0.030000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.950000
+            volScalarFieldValue alpha.fresh 0.050000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.030000) (100 100 0.035000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.940909
+            volScalarFieldValue alpha.fresh 0.059091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.035000) (100 100 0.040000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.931818
+            volScalarFieldValue alpha.fresh 0.068182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.040000) (100 100 0.045000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.922727
+            volScalarFieldValue alpha.fresh 0.077273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.045000) (100 100 0.050000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.913636
+            volScalarFieldValue alpha.fresh 0.086364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.050000) (100 100 0.055000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.904545
+            volScalarFieldValue alpha.fresh 0.095455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.055000) (100 100 0.060000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.895455
+            volScalarFieldValue alpha.fresh 0.104545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.060000) (100 100 0.065000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.886364
+            volScalarFieldValue alpha.fresh 0.113636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.065000) (100 100 0.070000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.877273
+            volScalarFieldValue alpha.fresh 0.122727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.070000) (100 100 0.075000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.868182
+            volScalarFieldValue alpha.fresh 0.131818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.075000) (100 100 0.080000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.859091
+            volScalarFieldValue alpha.fresh 0.140909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.080000) (100 100 0.085000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.850000
+            volScalarFieldValue alpha.fresh 0.150000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.085000) (100 100 0.090000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.840909
+            volScalarFieldValue alpha.fresh 0.159091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.090000) (100 100 0.095000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.831818
+            volScalarFieldValue alpha.fresh 0.168182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.095000) (100 100 0.100000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.822727
+            volScalarFieldValue alpha.fresh 0.177273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.100000) (100 100 0.105000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.813636
+            volScalarFieldValue alpha.fresh 0.186364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.105000) (100 100 0.110000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.804545
+            volScalarFieldValue alpha.fresh 0.195455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.110000) (100 100 0.115000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.795455
+            volScalarFieldValue alpha.fresh 0.204545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.115000) (100 100 0.120000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.786364
+            volScalarFieldValue alpha.fresh 0.213636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.120000) (100 100 0.125000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.777273
+            volScalarFieldValue alpha.fresh 0.222727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.125000) (100 100 0.130000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.768182
+            volScalarFieldValue alpha.fresh 0.231818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.130000) (100 100 0.135000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.759091
+            volScalarFieldValue alpha.fresh 0.240909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.135000) (100 100 0.140000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.750000
+            volScalarFieldValue alpha.fresh 0.250000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.140000) (100 100 0.145000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.740909
+            volScalarFieldValue alpha.fresh 0.259091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.145000) (100 100 0.150000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.731818
+            volScalarFieldValue alpha.fresh 0.268182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.150000) (100 100 0.155000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.722727
+            volScalarFieldValue alpha.fresh 0.277273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.155000) (100 100 0.160000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.713636
+            volScalarFieldValue alpha.fresh 0.286364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.160000) (100 100 0.165000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.704545
+            volScalarFieldValue alpha.fresh 0.295455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.165000) (100 100 0.170000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.695455
+            volScalarFieldValue alpha.fresh 0.304545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.170000) (100 100 0.175000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.686364
+            volScalarFieldValue alpha.fresh 0.313636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.175000) (100 100 0.180000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.677273
+            volScalarFieldValue alpha.fresh 0.322727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.180000) (100 100 0.185000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.668182
+            volScalarFieldValue alpha.fresh 0.331818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.185000) (100 100 0.190000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.659091
+            volScalarFieldValue alpha.fresh 0.340909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.190000) (100 100 0.195000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.650000
+            volScalarFieldValue alpha.fresh 0.350000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.195000) (100 100 0.200000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.640909
+            volScalarFieldValue alpha.fresh 0.359091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.200000) (100 100 0.205000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.631818
+            volScalarFieldValue alpha.fresh 0.368182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.205000) (100 100 0.210000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.622727
+            volScalarFieldValue alpha.fresh 0.377273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.210000) (100 100 0.215000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.613636
+            volScalarFieldValue alpha.fresh 0.386364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.215000) (100 100 0.220000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.604545
+            volScalarFieldValue alpha.fresh 0.395455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.220000) (100 100 0.225000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.595455
+            volScalarFieldValue alpha.fresh 0.404545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.225000) (100 100 0.230000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.586364
+            volScalarFieldValue alpha.fresh 0.413636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.230000) (100 100 0.235000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.577273
+            volScalarFieldValue alpha.fresh 0.422727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.235000) (100 100 0.240000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.568182
+            volScalarFieldValue alpha.fresh 0.431818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.240000) (100 100 0.245000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.559091
+            volScalarFieldValue alpha.fresh 0.440909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.245000) (100 100 0.250000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.550000
+            volScalarFieldValue alpha.fresh 0.450000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.250000) (100 100 0.255000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.540909
+            volScalarFieldValue alpha.fresh 0.459091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.255000) (100 100 0.260000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.531818
+            volScalarFieldValue alpha.fresh 0.468182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.260000) (100 100 0.265000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.522727
+            volScalarFieldValue alpha.fresh 0.477273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.265000) (100 100 0.270000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.513636
+            volScalarFieldValue alpha.fresh 0.486364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.270000) (100 100 0.275000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.504545
+            volScalarFieldValue alpha.fresh 0.495455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.275000) (100 100 0.280000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.495455
+            volScalarFieldValue alpha.fresh 0.504545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.280000) (100 100 0.285000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.486364
+            volScalarFieldValue alpha.fresh 0.513636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.285000) (100 100 0.290000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.477273
+            volScalarFieldValue alpha.fresh 0.522727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.290000) (100 100 0.295000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.468182
+            volScalarFieldValue alpha.fresh 0.531818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.295000) (100 100 0.300000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.459091
+            volScalarFieldValue alpha.fresh 0.540909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.300000) (100 100 0.305000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.450000
+            volScalarFieldValue alpha.fresh 0.550000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.305000) (100 100 0.310000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.440909
+            volScalarFieldValue alpha.fresh 0.559091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.310000) (100 100 0.315000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.431818
+            volScalarFieldValue alpha.fresh 0.568182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.315000) (100 100 0.320000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.422727
+            volScalarFieldValue alpha.fresh 0.577273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.320000) (100 100 0.325000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.413636
+            volScalarFieldValue alpha.fresh 0.586364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.325000) (100 100 0.330000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.404545
+            volScalarFieldValue alpha.fresh 0.595455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.330000) (100 100 0.335000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.395455
+            volScalarFieldValue alpha.fresh 0.604545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.335000) (100 100 0.340000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.386364
+            volScalarFieldValue alpha.fresh 0.613636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.340000) (100 100 0.345000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.377273
+            volScalarFieldValue alpha.fresh 0.622727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.345000) (100 100 0.350000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.368182
+            volScalarFieldValue alpha.fresh 0.631818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.350000) (100 100 0.355000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.359091
+            volScalarFieldValue alpha.fresh 0.640909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.355000) (100 100 0.360000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.350000
+            volScalarFieldValue alpha.fresh 0.650000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.360000) (100 100 0.365000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.340909
+            volScalarFieldValue alpha.fresh 0.659091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.365000) (100 100 0.370000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.331818
+            volScalarFieldValue alpha.fresh 0.668182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.370000) (100 100 0.375000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.322727
+            volScalarFieldValue alpha.fresh 0.677273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.375000) (100 100 0.380000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.313636
+            volScalarFieldValue alpha.fresh 0.686364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.380000) (100 100 0.385000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.304545
+            volScalarFieldValue alpha.fresh 0.695455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.385000) (100 100 0.390000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.295455
+            volScalarFieldValue alpha.fresh 0.704545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.390000) (100 100 0.395000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.286364
+            volScalarFieldValue alpha.fresh 0.713636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.395000) (100 100 0.400000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.277273
+            volScalarFieldValue alpha.fresh 0.722727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.400000) (100 100 0.405000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.268182
+            volScalarFieldValue alpha.fresh 0.731818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.405000) (100 100 0.410000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.259091
+            volScalarFieldValue alpha.fresh 0.740909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.410000) (100 100 0.415000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.250000
+            volScalarFieldValue alpha.fresh 0.750000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.415000) (100 100 0.420000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.240909
+            volScalarFieldValue alpha.fresh 0.759091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.420000) (100 100 0.425000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.231818
+            volScalarFieldValue alpha.fresh 0.768182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.425000) (100 100 0.430000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.222727
+            volScalarFieldValue alpha.fresh 0.777273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.430000) (100 100 0.435000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.213636
+            volScalarFieldValue alpha.fresh 0.786364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.435000) (100 100 0.440000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.204545
+            volScalarFieldValue alpha.fresh 0.795455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.440000) (100 100 0.445000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.195455
+            volScalarFieldValue alpha.fresh 0.804545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.445000) (100 100 0.450000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.186364
+            volScalarFieldValue alpha.fresh 0.813636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.450000) (100 100 0.455000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.177273
+            volScalarFieldValue alpha.fresh 0.822727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.455000) (100 100 0.460000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.168182
+            volScalarFieldValue alpha.fresh 0.831818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.460000) (100 100 0.465000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.159091
+            volScalarFieldValue alpha.fresh 0.840909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.465000) (100 100 0.470000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.150000
+            volScalarFieldValue alpha.fresh 0.850000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.470000) (100 100 0.475000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.140909
+            volScalarFieldValue alpha.fresh 0.859091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.475000) (100 100 0.480000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.131818
+            volScalarFieldValue alpha.fresh 0.868182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.480000) (100 100 0.485000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.122727
+            volScalarFieldValue alpha.fresh 0.877273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.485000) (100 100 0.490000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.113636
+            volScalarFieldValue alpha.fresh 0.886364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.490000) (100 100 0.495000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.104545
+            volScalarFieldValue alpha.fresh 0.895455
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.495000) (100 100 0.500000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.095455
+            volScalarFieldValue alpha.fresh 0.904545
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.500000) (100 100 0.505000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.086364
+            volScalarFieldValue alpha.fresh 0.913636
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.505000) (100 100 0.510000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.077273
+            volScalarFieldValue alpha.fresh 0.922727
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.510000) (100 100 0.515000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.068182
+            volScalarFieldValue alpha.fresh 0.931818
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.515000) (100 100 0.520000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.059091
+            volScalarFieldValue alpha.fresh 0.940909
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.520000) (100 100 0.525000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.050000
+            volScalarFieldValue alpha.fresh 0.950000
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.525000) (100 100 0.530000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.040909
+            volScalarFieldValue alpha.fresh 0.959091
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.530000) (100 100 0.535000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.031818
+            volScalarFieldValue alpha.fresh 0.968182
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.535000) (100 100 0.540000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.022727
+            volScalarFieldValue alpha.fresh 0.977273
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.540000) (100 100 0.545000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.013636
+            volScalarFieldValue alpha.fresh 0.986364
+        );
+    }
+
+    boxToCell
+    {
+        box (-100 -100 0.545000) (100 100 0.550000);
+        fieldValues
+        (
+            volScalarFieldValue alpha.salty 0.004545
+            volScalarFieldValue alpha.fresh 0.995455
+        );
+    }
+);
+
+
+// ************************************************************************* //

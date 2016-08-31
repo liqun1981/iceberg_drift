@@ -1,0 +1,36 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+# Set application name
+application=`getApplication`
+
+runApplication blockMesh
+
+runApplication -s 1 topoSet -dict system/topoSetDict1
+runApplication -s 1 subsetMesh -overwrite c0 -patch floatingObject1
+
+runApplication -s 2 topoSet -dict system/topoSetDict2
+runApplication -s 2 subsetMesh -overwrite c1 -patch floatingObject2
+
+runApplication -s selectBottom1 \
+    topoSet -dict system/topoSetDict-selectBottom1
+
+runApplication -s selectBottom2 \
+    topoSet -dict system/topoSetDict-selectBottom2
+
+
+runApplication -s 1 createPatch -dict system/createPatchDict
+
+
+rm -r ~/data/500/case503_twoblocksmoving2/constant/polyMesh
+mv ~/data/500/case503_twoblocksmoving2/1e-05/polyMesh ~/data/500/case503_twoblocksmoving2/constant/
+rm -r ~/data/500/case503_twoblocksmoving2/1e-05/
+
+cp -r 0.orig 0 > /dev/null 2>&1
+runApplication setFields
+runApplication $application
+
+#------------------------------------------------------------------------------
